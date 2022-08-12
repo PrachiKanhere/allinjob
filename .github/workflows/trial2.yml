@@ -36,3 +36,7 @@ jobs:
         run: |
           output=$(python .github/workflows/timstamp.py)
           echo "::set-output name=grrovyop::$output"
+        id: step15
+          
+      - name: Print op
+        run: echo "${{ steps.step15.outputs.grrovyop }}"
