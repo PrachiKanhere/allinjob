@@ -19,7 +19,7 @@ TIMESTAMP= Day_of_week[0:3]+' '+Month_of_year[0:3]+' '+Day_of_the_month+' '+est_
 #print(TIMESTAMP)
 
 formattedDate = datetime.date.today().strftime("%d-%b-%Y")
-print(formattedDate)
+#print(formattedDate)
 
 match = re.search(r"Following Buses might be down: \[.*\]", str)
 if match:
