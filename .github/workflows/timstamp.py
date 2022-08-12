@@ -16,7 +16,7 @@ est_time= now.astimezone(timezone('US/Eastern')).strftime("%H:%M:%S")
 zone = datetime.datetime.now(eastern).strftime("%Z")
 Current_year=datetime.date.today().strftime("%Y")
 TIMESTAMP= Day_of_week[0:3]+' '+Month_of_year[0:3]+' '+Day_of_the_month+' '+est_time+' '+zone+' '+Current_year
-print(TIMESTAMP)
+#print(TIMESTAMP)
 
 formattedDate = datetime.date.today().strftime("%d-%b-%Y")
 print(formattedDate)
