@@ -6,7 +6,7 @@ import re
 
 text_file = open("abc1.txt", "r")
 str = text_file.read()
-print(str)
+#print(str)
 eastern = timezone('US/Eastern')
 Day_of_week = datetime.date.today().strftime("%A")
 Month_of_year=datetime.date.today().strftime("%B")
@@ -24,7 +24,7 @@ print(formattedDate)
 match = re.search(r"Following Buses might be down: \[.*\]", str)
 if match:
        downBus= match.group()
-       print(downBus)
+       #print(downBus)
        DOWN_BUS = downBus.split(": ")[1]
        print(DOWN_BUS)
        if len(DOWN_BUS)== 0:
